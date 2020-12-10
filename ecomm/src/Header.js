@@ -3,7 +3,7 @@ import './Header.css'
 import {Link} from 'react-router-dom'
 function Header() {
     return (
-        <div className = "header">
+        <nav className = "header">
             <Link to = "/login">
             <img 
                src = "http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
@@ -11,8 +11,12 @@ function Header() {
                className = "header__logo"
             ></img>
             </Link>
-            
-        </div>
+            <div className = "header__search">
+             <input type="text" className="header__searchInput"></input>
+             
+            </div>
+        </nav>
+         
     );
 }
 
