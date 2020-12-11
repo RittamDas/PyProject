@@ -16,6 +16,28 @@ function Header() {
              <input type="text" className="header__searchInput"></input>
              <SearchIcon className = "header__searchIcon" />
             </div>
+            <div className = "header__nav">
+                <Link to = "/login" className="header__link">
+                    <div className="header__options">
+                        <span className="header_optionLineOne">Hello</span>
+                        <span className="header_optionLineTwo">Sign In</span>
+                    </div>
+                </Link>
+
+                <Link to = "/" className="header__link">
+                    <div className="header__options">
+                        <span className="header_optionLineOne">Returns</span>
+                        <span className="header_optionLineTwo">& Orders</span>
+                    </div>
+                </Link>
+
+                <Link to = "/" className="header__link">
+                    <div className="header__options">
+                        <span className="header_optionLineOne">Try</span>
+                        <span className="header_optionLineTwo">Prime</span>
+                    </div>
+                </Link>
+            </div>
         </nav>
          
     );
