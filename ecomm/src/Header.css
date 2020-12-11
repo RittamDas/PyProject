@@ -1,6 +1,6 @@
 .header{
-    background-color: #131921
-    
+    background-color: #131921;
+    display: flex;
 }
 .header__logo{
     width: 100px;
