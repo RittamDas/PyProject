@@ -14,6 +14,10 @@ function App() {
              <Route exact path = "/login">
                <h1>Login Page</h1>
              </Route>
+             <Route exact path = "/checkout">
+               <Header />
+               <h1>Checkout</h1>
+             </Route>
            </Switch>
               
          </div>
