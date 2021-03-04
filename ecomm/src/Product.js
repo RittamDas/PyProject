@@ -1,7 +1,19 @@
-import React from 'react'
-import './Product.css'
-import {FaStar} from 'react-icons/fa'
+import React from 'react';
+import './Product.css';
+import {FaStar} from 'react-icons/fa';
+import {useStateValue} from './StateProvider';
 function Product({title, price, image, rating, id}) {
+    export const [ {basket}, dispatch] = useStateValue();
+    const addToBasket = () => {
+         dispatch({
+             type: "ADD_TO_BASKET",
+             id: id,
+             title: title,
+             price: price,
+             image: image,
+             rating: rating
+         })
+    };
     return (
         <div className = "product">
             <p>{title}</p>
@@ -18,7 +30,7 @@ function Product({title, price, image, rating, id}) {
             <p>
                 <img src = {image} alt=""></img>
             </p>
-            <button>Add To Basket</button>
+            <button onClick={addToBasket}>Add To Basket</button>
         </div>
     )
 }
