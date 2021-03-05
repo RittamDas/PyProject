@@ -9,7 +9,7 @@ function Header() {
     console.log(basket);
     return (
         <nav className = "header">
-            <Link to = "/login">
+            <Link to = "/">
             <img 
                src = "http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
                alt=""

@@ -3,7 +3,8 @@ import './Product.css';
 import {FaStar} from 'react-icons/fa';
 import {useStateValue} from './StateProvider';
 function Product({title, price, image, rating, id}) {
-    export const [ {basket}, dispatch] = useStateValue();
+    const [{basket},dispatch] = useStateValue();
+    console.log(basket);
     const addToBasket = () => {
          dispatch({
              type: "ADD_TO_BASKET",
@@ -12,7 +13,8 @@ function Product({title, price, image, rating, id}) {
              price: price,
              image: image,
              rating: rating
-         })
+         });
+         console.log(basket);
     };
     return (
         <div className = "product">
