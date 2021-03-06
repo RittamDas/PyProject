@@ -29,7 +29,7 @@ function Home() {
            <Product
                   title="DUREX PLAY STRAWBWERRY FLAVOURED SWEET INTIMATE 50ML LUBE"
                   price = {18}
-                  image = "http://images.discountchemist.com.au/durex-play-sweet-strawberry-intimate-lube-50ml.jpg"
+                  image = "https://media-services.digital-rb.com/s3/live-productcatalogue/sys-master/images/h7e/he9/8871400177694/Durex_Lube_Strawberry_100ml_RBL1909745_FRONT.jpg"
                   rating = {5}
                   id = {12345}
             />
