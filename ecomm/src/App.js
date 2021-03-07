@@ -10,23 +10,25 @@ import { auth } from './firebase';
 function App() {
   const [{basket},dispatch] = useStateValue();
   console.log(basket);
-  const unsubscribe = useEffect(()=>{
-    auth.onAuthStateChanged((authUser => {
+  useEffect(()=>{
+    const unsubscribe = auth.onAuthStateChanged((authUser => {
       if(authUser){
+        
         dispatch({
           type: "SET_USER",
           user: authUser
         })
       }
       else{
+        
         dispatch({
           type: "SET_USER",
           user: null
         })
       }
-      return (()=>unsubscribe());
-    }))
-  })
+    }));
+    return ()=>unsubscribe();
+  },[])
   return (
     <Router>
          <div className="App">

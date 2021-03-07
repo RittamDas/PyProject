@@ -8,6 +8,7 @@ function Login() {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const login = e => {
+        
         e.preventDefault();
         auth.signInWithEmailAndPassword(email,password)
             .then((auth) => {
@@ -16,6 +17,7 @@ function Login() {
             .catch(e=>alert(e.message));
     }
     const register = e => {
+       
         e.preventDefault();
         auth.createUserWithEmailAndPassword(email,password)
             .then((auth)=>{
