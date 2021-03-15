@@ -21,7 +21,7 @@ function Checkout() {
             <img
                className = "checkout__ad"
                src = "https://k4h6h8w8.stackpathcdn.com/blog/wp-content/uploads/2019/05/Know-about-Amazon-Ad-Types-and-Best-Practices-for-Campaign-Set-Up-732x244.jpg"
-               alt=""
+               alt="Checkout"
             >
             </img>
             {basket.length === 0?(
